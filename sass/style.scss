@@ -1,1 +1,137 @@
-@use 'globals/index' as *;ustensilescouver
+@use "globals/index" as *;
+@use "components/index" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
+
+body {
+  margin: 0;
+  font-family: $secondary-font;
+  background-color: #f6f6f6;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  &__icon {
+    display: none;
+  }
+  &__title {
+    margin: 15px 0px 5px 0px;
+    @include ohmyfood-font(1.875rem);
+  }
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #eaeaea;
+  color: #353535;
+  box-shadow:0px 4px 4px 0px rgba($color: #000000, $alpha: 0.25);
+  &__icon {
+    padding-right: 15px;
+  }
+  &__text {
+    font-family: $secondary-font;
+    font-weight: 500;
+  }
+}
+
+.explore {
+  padding: 0 30px;
+  text-align: center;
+  &__title {
+    padding: 0 30px;
+    margin: 40px 0 20px 0;
+  }
+  &__text {
+    font-family: $secondary-font;
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  &__button {
+    margin-top: 25px;
+    margin-bottom: 55px;
+  }
+}
+
+.functioning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  padding: 50px 20px 50px 30px;
+  &__title {
+    margin-bottom: 30px;
+    align-self: flex-start;
+  }
+  &__block {
+    height: 70px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    @include box-shadow;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    // gap ne marche pas ??
+  }
+  &__index {
+    background-color: $purple;
+    color: $white;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+  }
+  &__icon {
+    color: #7e7e7e;
+    padding-left: 35px;
+    padding-right: 25px;
+    &--purple {
+      color: $purple;
+    }
+  }
+  &__text {
+    font-weight: 500;
+  }
+}
+
+.restaurant {
+  padding: 50px 20px;
+  &__title {
+    margin-bottom: 30px;
+  }
+}
+
+footer {
+  background-color: #353535;
+}
+
+.footer-container {
+  padding: 25px;
+  color: $white;
+  &__title {
+    @include ohmyfood-font(1.125rem);
+    margin-bottom: 20px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__link {
+    color: $white;
+  }
+  &__icon {
+    margin-right: 10px;
+  }
+}

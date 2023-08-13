@@ -1,0 +1,11 @@
+@use '../globals/variables' as *;
+
+.button {
+    display:inline-block;
+    font-family:$secondary-font;
+    font-weight:500;
+    color:$white;
+    background: linear-gradient(#FF79DA, #9356DC);
+    padding: 13px 19px;
+    border-radius:25px;
+}

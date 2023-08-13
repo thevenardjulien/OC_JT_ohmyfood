@@ -1,17 +1,210 @@
-/* Error: expected "{".
- *   ,
- * 1 | @use 'globals/index' as *;ustensilescouver
- *   |                                           ^
- *   '
- *   sass\style.scss 1:43  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected \"{\".\a   \2577 \a 1 \2502  @use 'globals/index' as *;ustensilescouver\a   \2502                                            ^\a   \2575 \a   sass\\style.scss 1:43  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.button {
+  display: inline-block;
+  font-family: roboto, sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 13px 19px;
+  border-radius: 25px;
+}
+
+.restaurant-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.restaurant-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.restaurant-card__label {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 7px 9px;
+  background-color: #99e2d0;
+  color: #008766;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+.restaurant-card__img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant-card__content {
+  display: flex;
+  align-items: center;
+}
+.restaurant-card__left {
+  width: 80%;
+  padding: 15px 0px 15px 15px;
+}
+.restaurant-card__icon {
+  font-size: 1.375rem;
+}
+
+body {
+  margin: 0;
+  font-family: roboto, sans-serif;
+  background-color: #f6f6f6;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.header-container__icon {
+  display: none;
+}
+.header-container__title {
+  margin: 15px 0px 5px 0px;
+  font-family: Shrikhand, sans-serif;
+  font-size: 1.875rem;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #eaeaea;
+  color: #353535;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.location__icon {
+  padding-right: 15px;
+}
+.location__text {
+  font-family: roboto, sans-serif;
+  font-weight: 500;
+}
+
+.explore {
+  padding: 0 30px;
+  text-align: center;
+}
+.explore__title {
+  padding: 0 30px;
+  margin: 40px 0 20px 0;
+}
+.explore__text {
+  font-family: roboto, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.explore__button {
+  margin-top: 25px;
+  margin-bottom: 55px;
+}
+
+.functioning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 50px 20px 50px 30px;
+}
+.functioning__title {
+  margin-bottom: 30px;
+  align-self: flex-start;
+}
+.functioning__block {
+  height: 70px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.functioning__index {
+  background-color: #9356dc;
+  color: #ffffff;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+}
+.functioning__icon {
+  color: #7e7e7e;
+  padding-left: 35px;
+  padding-right: 25px;
+}
+.functioning__icon--purple {
+  color: #9356dc;
+}
+.functioning__text {
+  font-weight: 500;
+}
+
+.restaurant {
+  padding: 50px 20px;
+}
+.restaurant__title {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #353535;
+}
+
+.footer-container {
+  padding: 25px;
+  color: #ffffff;
+}
+.footer-container__title {
+  font-family: Shrikhand, sans-serif;
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+}
+.footer-container__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-container__link {
+  color: #ffffff;
+}
+.footer-container__icon {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
