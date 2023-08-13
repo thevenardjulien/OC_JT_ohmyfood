@@ -1,2 +1,5 @@
-@use '_variables';
-@use 'generals';
+@use 'globals/index' as *;
+
+body {
+    background-color: $dark-green;
+}
