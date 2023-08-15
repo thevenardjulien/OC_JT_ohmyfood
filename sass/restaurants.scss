@@ -25,8 +25,10 @@
 .menu {
   position: relative;
   top: -50px;
-  padding: 30px 17px;
+  padding: 40px 17px;
   background-color: #f6f6f6;
+  margin-bottom:-50px;
+  @include box-shadow;
   border-radius: 40px 40px 0 0;
   box-sizing: border-box;
   @include flex(column);
@@ -81,7 +83,6 @@
 
 .menu-button {
   padding: 16px 50px;
-  margin-bottom: -40px;
 }
 
 @media (min-width: 768px) {
