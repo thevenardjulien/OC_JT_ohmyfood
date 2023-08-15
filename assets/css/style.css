@@ -123,6 +123,44 @@ i.hearth {
   transform-origin: bottom center;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  animation: loader 2s ease-out forwards;
+}
+
+@keyframes loader {
+  100% {
+    opacity: 100%;
+    display: none;
+  }
+}
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 10px solid white;
+  border-top-color: #9356dc;
+  border-radius: 50%;
+  animation: loader-rotation 750ms infinite;
+}
+
+@keyframes loader-rotation {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
 body {
   margin: 0;
   font-family: roboto, sans-serif;
