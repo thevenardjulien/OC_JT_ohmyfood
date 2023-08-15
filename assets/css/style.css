@@ -95,6 +95,34 @@ li {
   font-size: 1.375rem;
 }
 
+i.hearth {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.hearth-regular {
+  position: relative;
+  z-index: 2;
+}
+.hearth-regular:hover {
+  color: #9356dc;
+  transition: color 800ms;
+}
+.hearth-regular:hover + .hearth-solid {
+  z-index: 3;
+  transform: scale(1);
+}
+
+.hearth-solid {
+  position: relative;
+  left: -25px;
+  color: #9356dc;
+  transform: scale(0);
+  transition: transform 500ms;
+  transform-origin: bottom center;
+}
+
 body {
   margin: 0;
   font-family: roboto, sans-serif;

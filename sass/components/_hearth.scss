@@ -1,0 +1,29 @@
+@use '../globals/index' as *;
+
+i.hearth {
+    display:block;
+    width:25px;
+    height:25px;
+}
+
+.hearth-regular {
+    position:relative;
+    z-index:2;
+    &:hover {
+        color:$purple;
+        transition:color 800ms;
+    }
+    &:hover + .hearth-solid {
+        z-index:3;
+        transform:scale(1);
+    }
+}
+
+.hearth-solid {
+    position:relative;
+    left:-25px;
+    color:$purple;
+    transform:scale(0);
+    transition: transform 500ms;
+    transform-origin: bottom center;
+}
