@@ -1,13 +1,13 @@
 @use '../globals/index' as *;
 
-i.hearth {
+.hearth {
     display:block;
     width:25px;
     height:25px;
+    font-size: 1.375rem;
 }
 
 .hearth-regular {
-    position:relative;
     z-index:2;
     &:hover {
         color:$purple;

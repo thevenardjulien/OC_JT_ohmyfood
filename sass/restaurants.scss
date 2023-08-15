@@ -1,0 +1,81 @@
+@use "globals/index" as *;
+@use "components/index" as *;
+
+.header-container {
+  &__icon {
+    position: absolute;
+    left: 25px;
+  }
+}
+
+.main-img {
+  @include flex;
+  height: 275px;
+  width: 100%;
+  z-index: 1;
+}
+
+.menu {
+  @include flex(column);
+  position: relative;
+  top: -50px;
+  padding: 30px 17px;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  &__header {
+    @include flex($justify-content: flex-start);
+    margin-bottom: 40px;
+  }
+  &__title {
+    @include ohmyfood-font(1.75rem);
+    margin-right: 25px;
+  }
+  &__icon {
+    display: block;
+    font-size: 1.375rem;
+  }
+}
+
+.container-sous-menu {
+  @include flex(column);
+  gap:40px;
+}
+
+.sous-menu {
+  width:100%;
+  @include flex(column, $align-items:flex-start);
+  gap: 15px;
+  &__label {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 8px;
+  }
+  &__bloc {
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    @include box-shadow;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  &__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  &__content {
+    @include flex($justify-content: space-between);
+  }
+  &__prix {
+    font-weight: 500;
+  }
+}
+
+.underline {
+  text-decoration: underline 3px $light-green;
+  text-underline-offset: 8px;
+}
+
+.menu-button {
+  padding: 16px 50px;
+  margin-bottom:-40px;
+}
