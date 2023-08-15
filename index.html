@@ -16,20 +16,20 @@
     <title>ohmyfood</title>
   </head>
   <body>
-    <div class="loader"></div>
+    <!-- <div class="loader"></div> -->
     <div class="main-container">
       <header>
         <div class="header-container">
           <i class="header-container__icon fa-solid fa-arrow-left"></i>
-          <p class="header-container__title">ohmyfood</p>
+          <a href="#"><p class="header-container__title">ohmyfood</p></a>
         </div>
       </header>
-  
-      <section class="location">
+
+      <div class="location">
         <i class="fa-solid fa-location-dot location__icon"></i>
         <p class="location__text">Paris, Belleville</p>
-      </section>
-  
+      </div>
+
       <section class="explore">
         <h1 class="explore__title">Réservez le menu qui vous convient</h1>
         <p class="explore__text">
@@ -37,31 +37,36 @@
         </p>
         <a class="explore__button button" href="#">Explorer nos restaurants</a>
       </section>
-  
+
       <section class="functioning">
         <h2 class="functioning__title">Fonctionnement</h2>
-        <a href="#" class="functioning__block">
-          <span class="functioning__index">1</span>
-          <i class="functioning__icon fa-solid fa-mobile-screen-button"></i>
-          <p class="functioning__text">Choisissez un restaurant</p>
-        </a>
-        <a href="#" class="functioning__block">
-          <span class="functioning__index">2</span>
-          <i class="functioning__icon fa-solid fa-list-ul"></i>
-          <p class="functioning__text">Composez votre menu</p>
-        </a>
-        <a href="#" class="functioning__block">
-          <span class="functioning__index">3</span>
-          <i
-            class="functioning__icon functioning__icon--purple fa-solid fa-store"
-          ></i>
-          <p class="functioning__text">Dégustez au restaurant</p>
-        </a>
+
+        <div class="functioning__container">
+          <a href="#" class="functioning__block">
+            <span class="functioning__index">1</span>
+            <i class="functioning__icon fa-solid fa-mobile-screen-button"></i>
+            <p class="functioning__text">Choisissez un restaurant</p>
+          </a>
+
+          <a href="#" class="functioning__block">
+            <span class="functioning__index">2</span>
+            <i class="functioning__icon fa-solid fa-list-ul"></i>
+            <p class="functioning__text">Composez votre menu</p>
+          </a>
+
+          <a href="#" class="functioning__block">
+            <span class="functioning__index">3</span>
+            <i
+              class="functioning__icon functioning__icon--purple fa-solid fa-store"
+            ></i>
+            <p class="functioning__text">Dégustez au restaurant</p>
+          </a>
+        </div>
       </section>
-  
+
       <section class="restaurant">
         <h2 class="restaurant__title">Restaurants</h2>
-        <div class="restaurant-cards">
+        <div class="restaurant__cards">
           <a href="#" class="restaurant-card">
             <div>
               <span class="restaurant-card__label">Nouveau</span>
@@ -84,7 +89,7 @@
               ></i>
             </div>
           </a>
-  
+
           <a href="#" class="restaurant-card">
             <div>
               <span class="restaurant-card__label">Nouveau</span>
@@ -107,7 +112,7 @@
               ></i>
             </div>
           </a>
-  
+
           <a href="#" class="restaurant-card">
             <div>
               <img
@@ -129,7 +134,7 @@
               ></i>
             </div>
           </a>
-  
+
           <a href="#" class="restaurant-card">
             <div>
               <img
@@ -153,10 +158,10 @@
           </a>
         </div>
       </section>
-  
+
       <footer>
         <div class="footer-container">
-          <p class="footer-container__title">ohmyfood</p>
+          <a href="#"><p class="footer-container__title">ohmyfood</p></a>
           <ul class="footer-container__list">
             <li>
               <a class="footer-container__link" href="#"
@@ -165,8 +170,12 @@
               >
             </li>
             <li>
-              <a class="footer-container__link" href="#"
-                ><i class="footer-container__icon fa-solid fa-handshake-angle"></i
+              <a
+                class="footer-container__link footer-container__spacing"
+                href="#"
+                ><i
+                  class="footer-container__icon fa-solid fa-handshake-angle"
+                ></i
                 >Devenir partenaire</a
               >
             </li>
