@@ -2,7 +2,6 @@
 @use "components/index" as *;
 @use "restaurants" as *;
 
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
 
 html {
@@ -12,21 +11,18 @@ html {
 body {
   margin: 0;
   font-family: $secondary-font;
-  background-color: #f6f6f6;
+  background-color: $light-gray;
 }
 
 .main-container {
   width: 100%;
   max-width: 1440px;
-  box-sizing: border-box;
   margin: 0 auto;
 }
 
 .header-container {
   @include flex;
   background-color: $white;
-  box-shadow: 0px 2px 4px 0px rgba($color: #000000, $alpha: 0.15);
-  // La box-shadow ne s'applique pas
   &__title {
     margin: 15px 0px 5px 0px;
     @include ohmyfood-font(1.875rem);
@@ -35,15 +31,14 @@ body {
 
 .location {
   @include flex;
-  padding: 15px;
-  background-color: #eaeaea;
-  color: #353535;
-  box-shadow: 0px 4px 4px 0px rgba($color: #000000, $alpha: 0.25);
+  padding: 15px 0;
+  background-color: $gray;
+  color: $dark-gray;
+  box-shadow: 0px 2px 4px 2px rgba($color: #000000, $alpha: 0.25);
   &__icon {
     padding-right: 15px;
   }
   &__text {
-    font-family: $secondary-font;
     font-weight: 500;
   }
 }
@@ -56,14 +51,13 @@ body {
     margin: 40px 0 20px 0;
   }
   &__text {
-    font-family: $secondary-font;
     font-size: 1.125rem;
     font-weight: 300;
     margin-bottom: 10px;
   }
   &__button {
     margin-top: 25px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 }
 
@@ -83,11 +77,10 @@ body {
     height: 70px;
     width: 100%;
     border-radius: 20px;
-    background-color: #f6f6f6;
+    background-color: $light-gray;
     @include box-shadow;
     @include flex($justify-content: flex-start);
     margin-bottom: 25px;
-    // gap ne marche pas ??
   }
   &__index {
     background-color: $purple;
@@ -101,8 +94,7 @@ body {
   }
   &__icon {
     color: #7e7e7e;
-    padding-left: 40px;
-    padding-right: 25px;
+    padding: 0 25px 0 40px;
     &--purple {
       color: $purple;
     }
@@ -124,16 +116,15 @@ body {
 }
 
 footer {
-  background-color: #353535;
+  background-color: $dark-gray;
 }
 
 .footer-container {
   padding: 25px;
-  color: $white;
   &__title {
     @include ohmyfood-font(1.125rem);
     margin-bottom: 20px;
-    color:white;
+    color: $white;
   }
   &__list {
     @include flex(column, $align-items: flex-start);
@@ -152,16 +143,19 @@ footer {
 @media (min-width: 768px) {
   .functioning {
     padding: 25px 80px;
+    &__block {
+      padding-right: 10px;
+    }
   }
   .explore__title {
     font-size: 2rem;
   }
+  .functioning__container {
+    @include flex($justify-content: flex-start);
+    gap: 25px;
+  }
   .restaurant {
     padding: 25px 80px;
-  }
-  .functioning__container {
-    display: flex;
-    gap: 25px;
   }
   .restaurant__cards {
     grid-template-columns: repeat(2, 1fr);
@@ -169,19 +163,18 @@ footer {
     column-gap: 100px;
   }
   .footer-container {
-    padding-top: 55px;
-    padding-bottom: 30px;
-    padding-right: 50px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+    padding: 55px 50px 30px 0px;
+    @include flex(
+      $flex-direction: row-reverse,
+      $justify-content: flex-start,
+      $align-items: center
+    );
     gap: 20px;
     &__title {
       margin: 0;
     }
     &__spacing {
-            //remplacer + tard par un nth-child(2)
-            padding-right: 25px;
+      padding-right: 25px;
     }
   }
 
@@ -205,7 +198,6 @@ footer {
   }
   .footer-container {
     &__spacing {
-      //remplacer + tard par un nth-child(2)
       padding-right: 50px;
     }
   }

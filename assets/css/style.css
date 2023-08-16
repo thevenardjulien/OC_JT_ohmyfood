@@ -92,32 +92,29 @@ li {
   padding: 15px 0px 15px 15px;
 }
 
-.hearth {
-  display: block;
-  width: 25px;
-  height: 25px;
+.heart {
   font-size: 1.375rem;
 }
 
-.hearth-regular {
+.heart-regular {
   z-index: 2;
 }
-.hearth-regular:hover {
+.heart-regular:hover {
   color: #9356dc;
   transition: color 800ms;
 }
-.hearth-regular:hover + .hearth-solid {
+.heart-regular:hover + .heart-solid {
   z-index: 3;
   transform: scale(1);
 }
 
-.hearth-solid {
+.heart-solid {
   position: relative;
   left: -25px;
   color: #9356dc;
   transform: scale(0);
   transition: transform 500ms;
-  transform-origin: bottom center;
+  transform-origin: center center;
 }
 
 .loader {
@@ -292,7 +289,6 @@ body {
 .main-container {
   width: 100%;
   max-width: 1440px;
-  box-sizing: border-box;
   margin: 0 auto;
 }
 
@@ -302,7 +298,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .header-container__title {
   margin: 15px 0px 5px 0px;
@@ -315,16 +310,15 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 15px 0;
   background-color: #eaeaea;
   color: #353535;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.25);
 }
 .location__icon {
   padding-right: 15px;
 }
 .location__text {
-  font-family: roboto, sans-serif;
   font-weight: 500;
 }
 
@@ -337,14 +331,13 @@ body {
   margin: 40px 0 20px 0;
 }
 .explore__text {
-  font-family: roboto, sans-serif;
   font-size: 1.125rem;
   font-weight: 300;
   margin-bottom: 10px;
 }
 .explore__button {
   margin-top: 25px;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
 .functioning {
@@ -390,8 +383,7 @@ body {
 }
 .functioning__icon {
   color: #7e7e7e;
-  padding-left: 40px;
-  padding-right: 25px;
+  padding: 0 25px 0 40px;
 }
 .functioning__icon--purple {
   color: #9356dc;
@@ -417,13 +409,12 @@ footer {
 
 .footer-container {
   padding: 25px;
-  color: #ffffff;
 }
 .footer-container__title {
   font-family: Shrikhand, sans-serif;
   font-size: 1.125rem;
   margin-bottom: 20px;
-  color: white;
+  color: #ffffff;
 }
 .footer-container__list {
   display: flex;
@@ -444,15 +435,21 @@ footer {
   .functioning {
     padding: 25px 80px;
   }
+  .functioning__block {
+    padding-right: 10px;
+  }
   .explore__title {
     font-size: 2rem;
   }
-  .restaurant {
-    padding: 25px 80px;
-  }
   .functioning__container {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     gap: 25px;
+  }
+  .restaurant {
+    padding: 25px 80px;
   }
   .restaurant__cards {
     grid-template-columns: repeat(2, 1fr);
@@ -460,11 +457,10 @@ footer {
     column-gap: 100px;
   }
   .footer-container {
-    padding-top: 55px;
-    padding-bottom: 30px;
-    padding-right: 50px;
+    padding: 55px 50px 30px 0px;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
   }
