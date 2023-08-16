@@ -94,26 +94,27 @@ li {
 
 .heart {
   font-size: 1.375rem;
+  display: block;
+  padding: 5px;
 }
 
-.heart-regular {
-  z-index: 2;
+.heart:hover {
+  color: transparent;
+  transition: color 300ms;
 }
-.heart-regular:hover {
-  color: #9356dc;
-  transition: color 800ms;
-}
-.heart-regular:hover + .heart-solid {
-  z-index: 3;
+.heart:hover + .fa-solid {
   transform: scale(1);
 }
 
-.heart-solid {
+.fa-solid {
   position: relative;
-  left: -25px;
-  color: #9356dc;
+  left: -32px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   transform: scale(0);
-  transition: transform 500ms;
+  transition: transform 300ms;
   transform-origin: center center;
 }
 
