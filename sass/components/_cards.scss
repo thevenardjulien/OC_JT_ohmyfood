@@ -31,8 +31,8 @@
     border-radius: 15px 15px 0 0;
   }
   &__content {
-    display: flex;
-    align-items: center;
+    @include flex($justify-content:space-between);
+    padding-right:20px;
   }
   &__left {
     width: 80%;

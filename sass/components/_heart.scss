@@ -1,24 +1,26 @@
 @use '../globals/index' as *;
 
-.heart {
-    font-size: 1.375rem;
-    display:block;
-    padding:5px;
+.heart-container {
+    position:relative;
 }
 
 .heart {
+    font-size: 1.375rem;
+    display:flex;
+    padding:5px;
+    transition: color 300ms;
     &:hover {
         color:transparent;
-        transition:color 300ms;
     }
     &:hover + .fa-solid {
         transform:scale(1);
     }
 }
 
-.fa-solid {
-    position:relative;
-    left:-32px;
+.heart.fa-solid {
+    position:absolute;
+    top:0;
+    left:0;
     background: linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-background-clip: text;
@@ -27,3 +29,6 @@
     transition: transform 300ms;
     transform-origin: center center;
 }
+
+
+

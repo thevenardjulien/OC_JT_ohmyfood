@@ -5,16 +5,10 @@
   @include flex($justify-content: space-between);
   &__icon {
     padding-top: 10px;
-    padding-left: 25px;
   }
 }
 
-.main {
-  @include flex;
-}
-
 .banner {
-  z-index: 1;
   &__img {
     height: 275px;
     width: 100%;
@@ -23,28 +17,29 @@
 }
 
 .menu {
+  margin: 0 auto;
+  padding: 40px 15px;
   position: relative;
   top: -50px;
-  padding: 40px 17px;
   background-color: #f6f6f6;
-  margin-bottom:-50px;
+  margin-bottom: -50px;
   @include box-shadow;
   border-radius: 40px 40px 0 0;
-  box-sizing: border-box;
-  @include flex(column);
   &__header {
-    @include flex($justify-content: flex-start);
+    @include flex($justify-content: space-between, $align-items: center);
     margin-bottom: 40px;
+    padding-right: 20px;
   }
   &__title {
     @include ohmyfood-font(1.75rem);
-    margin-right: 25px;
   }
 }
 
 .container-sous-menu {
   @include flex(column);
   gap: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .sous-menu {
@@ -58,6 +53,7 @@
   }
   &__bloc {
     width: 100%;
+    box-sizing: border-box;
     background-color: white;
     box-sizing: border-box;
     @include box-shadow;
@@ -66,10 +62,15 @@
   }
   &__title {
     font-size: 1.125rem;
-    font-weight: 600;
+    font-weight: 500;
   }
   &__content {
     @include flex($justify-content: space-between);
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-right: 5px;
   }
   &__prix {
     font-weight: 500;
@@ -92,10 +93,13 @@
     }
   }
   .menu {
+    @include flex(column);
     width: 75%;
-    left: 10%;
     &__header {
       justify-content: center;
+    }
+    &__title {
+      padding-right: 15px;
     }
   }
   .container-sous-menu {
