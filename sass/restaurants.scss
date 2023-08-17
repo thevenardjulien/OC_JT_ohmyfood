@@ -7,8 +7,12 @@
 
 .header-container {
   @include flex($justify-content: space-between);
+  &__iconbox {
+    position:absolute;
+  }
   &__icon {
     padding-top: 10px;
+    margin-left:15px;
   }
 }
 
@@ -129,6 +133,11 @@
 }
 
 @media (min-width: 768px) {
+  .header-container {
+    &__icon {
+      margin-left:25px;
+    }
+  }
   .banner {
     &__img {
       height: 385px;
