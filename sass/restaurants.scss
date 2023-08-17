@@ -1,6 +1,10 @@
 @use "globals/index" as *;
 @use "components/index" as *;
 
+.main-container {
+  background-color:$white;
+}
+
 .header-container {
   @include flex($justify-content: space-between);
   &__icon {
@@ -21,7 +25,7 @@
   padding: 40px 15px;
   position: relative;
   top: -50px;
-  background-color: #f6f6f6;
+  background-color: $light-gray;
   margin-bottom: -50px;
   @include box-shadow;
   border-radius: 40px 40px 0 0;
@@ -40,14 +44,12 @@
   gap: 40px;
   margin: 0;
   padding: 0;
-  background-color: $light-gray;
 }
 
 .section-menu {
   width: 100%;
   @include flex(column, $align-items: flex-start);
   gap: 15px;
-
   &__label {
     text-transform: uppercase;
     font-weight: 300;
@@ -68,6 +70,7 @@
   box-sizing: border-box;
   overflow: hidden;
   @include box-shadow;
+  background-color: $white;
   border-radius: 15px;
   &:hover .menu-card__validation {
     transform: translateX(0);

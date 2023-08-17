@@ -21,7 +21,7 @@
       <header>
         <div class="header-container">
           <a href="../index.html">
-            <i class="header-container__icon fa-solid fa-arrow-left"></i>
+            <!-- <i class="header-container__icon fa-solid fa-arrow-left"></i> -->
           </a>
           <a href="../index.html"
             ><p class="header-container__title">ohmyfood</p></a
@@ -35,138 +35,196 @@
           <img
             class="banner__img"
             src="../assets/img/la_note_enchantee.jpg"
-            alt="Image La palette du goût"
+            alt="Image La note enchantée"
           />
         </div>
         <div class="menu">
           <div class="menu__header">
             <h1 class="menu__title">La note enchantée</h1>
-            <i class="menu__icon heart fa-regular fa-heart"></i>
-            <i class="menu__icon heart fa-solid fa-heart"></i>
+            <div class="heart-container">
+              <i class="menu__icon heart fa-regular fa-heart"></i>
+              <i class="menu__icon heart fa-solid fa-heart"></i>
+            </div>
           </div>
-          <div class="container-sous-menu">
+
+          <div class="container-sections-menu">
             <!-- Entrees -->
-            <section class="sous-menu">
-              <p class="sous-menu__label">
-                <span class="underline">Entr</span>ées
+
+            <section class="section-menu">
+              <p class="section-menu__label">
+                <span class="section-menu__label--underline">Entr</span>ées
               </p>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Ravioles de foie gras</h2>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Ravioles de foie gras</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Accompagnées de leur crème à la truffe</p>
+                    <p class="menu-card__price">25€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">
-                    Accompagnées de leur crème à la truffe
-                  </p>
-                  <p class="sous-menu__prix">25€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Caviar osciètre</h2>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Caviar osciètre</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Sur blini à la farine de blé noir</p>
+                    <p class="menu-card__price">35€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">
-                    Sur blini à la farine de blé noir
-                  </p>
-                  <p class="sous-menu__prix">35€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Homard et espuma de potiron</h2>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Homard et espuma de potiron</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Marinés aux zestes d'orange</p>
+                    <p class="menu-card__price">20€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Marinés aux zestes d'orange</p>
-                  <p class="sous-menu__prix">20€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">
-                    Foie gras de canard cuit entier
-                  </h2>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Foie gras de canard cuit entier</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Confiture de figue et pain toasté</p>
+                    <p class="menu-card__price">35€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">
-                    Confiture de figue et pain toasté
-                  </p>
-                  <p class="sous-menu__prix">35€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
+              </a>
+              
             </section>
+
             <!-- Plats -->
-            <section class="sous-menu">
-              <p class="sous-menu__label">
-                <span class="underline">Plat</span>s
+
+            <section class="section-menu">
+              <p class="section-menu__label">
+                <span class="section-menu__label--underline">Plat</span>s
               </p>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">
-                    Noix de coquilles Saint-Jacques
-                  </h2>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Noix de coquilles Saint-Jacques</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Sur lit de purée de céleri-rave</p>
+                    <p class="menu-card__price">40€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Sur lit de purée de céleri-rave</p>
-                  <p class="sous-menu__prix">40€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Langoustine poêlée</h2>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Langoustine poêlée</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Purée de patate douce</p>
+                    <p class="menu-card__price">35€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Purée de patate douce</p>
-                  <p class="sous-menu__prix">35€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Mijoté de queue de bœuf</h2>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Mijoté de queue de bœuf</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Et riz sauvage aux zestes de citron</p>
+                    <p class="menu-card__price">45€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">
-                    Et riz sauvage aux zestes de citron
-                  </p>
-                  <p class="sous-menu__prix">45€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
+              </a>
+              
             </section>
+
             <!-- Desserts -->
-            <section class="sous-menu">
-              <p class="sous-menu__label">
-                <span class="underline">Dess</span>erts
+
+            <section class="section-menu">
+              <p class="section-menu__label">
+                <span class="section-menu__label--underline">Dess</span>erts
               </p>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Macaron noisette et chocolat</h2>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Macaron noisette et chocolat</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Glace au caramel brun et sel de Guérande</p>
+                    <p class="menu-card__price">18€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">
-                    Glace au caramel brun et sel de Guérande
-                  </p>
-                  <p class="sous-menu__prix">18€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Baba au rhum revisité</h2>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Baba au rhum revisité</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Avec son coulis de citron</p>
+                    <p class="menu-card__price">22€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Avec son coulis de citron</p>
-                  <p class="sous-menu__prix">22€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Tarte au citron meringuée</h2>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Tarte au citron meringuée</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Déstructurée</p>
+                    <p class="menu-card__price">23€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Déstructurée</p>
-                  <p class="sous-menu__prix">23€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
+              </a>
+              
             </section>
+
             <a href="#" class="menu-button button">Commander</a>
           </div>
         </div>

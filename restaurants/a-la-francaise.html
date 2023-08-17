@@ -21,7 +21,7 @@
       <header>
         <div class="header-container">
           <a href="../index.html">
-            <i class="header-container__icon fa-solid fa-arrow-left"></i>
+            <!-- <i class="header-container__icon fa-solid fa-arrow-left"></i> -->
           </a>
           <a href="../index.html"
             ><p class="header-container__title">ohmyfood</p></a
@@ -34,120 +34,182 @@
         <div class="banner">
           <img
             class="banner__img"
-            src="../assets/img/la_palette_du_gout.jpg"
-            alt="Image La palette du goût"
+            src="../assets/img/a_la_francaise.jpg"
+            alt="Image À la française"
           />
         </div>
         <div class="menu">
           <div class="menu__header">
             <h1 class="menu__title">À la française</h1>
-            <i class="menu__icon heart fa-regular fa-heart"></i>
-            <i class="menu__icon heart fa-solid fa-heart"></i>
+            <div class="heart-container">
+              <i class="menu__icon heart fa-regular fa-heart"></i>
+              <i class="menu__icon heart fa-solid fa-heart"></i>
+            </div>
           </div>
-          <div class="container-sous-menu">
+
+          <div class="container-sections-menu">
             <!-- Entrees -->
-            <section class="sous-menu">
-              <p class="sous-menu__label">
-                <span class="underline">Entr</span>ées
+
+            <section class="section-menu">
+              <p class="section-menu__label">
+                <span class="section-menu__label--underline">Entr</span>ées
               </p>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Tartare de poulpe acidulé</h2>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Tartare de poulpe acidulé</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Aux zestes d'orange</p>
+                    <p class="menu-card__price">25€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Aux zestes d'orange</p>
-                  <p class="sous-menu__prix">25€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Velouté de légumes d'antan</h2>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Velouté de légumes d'antan</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Carotte, panais, topinambour</p>
+                    <p class="menu-card__price">35€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Carotte, panais, topinambour</p>
-                  <p class="sous-menu__prix">35€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div><h2 class="sous-menu__title">Soupe à l'oignon</h2></div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Revisitée</p>
-                  <p class="sous-menu__prix">20€</p>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Soupe à l'oignon</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Revisitée</p>
+                    <p class="menu-card__price">20€</p>
+                  </div>
                 </div>
-              </div>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
+                </div>
+              </a>
+              
             </section>
+
             <!-- Plats -->
-            <section class="sous-menu">
-              <p class="sous-menu__label">
-                <span class="underline">Plat</span>s
+
+            <section class="section-menu">
+              <p class="section-menu__label">
+                <span class="section-menu__label--underline">Plat</span>s
               </p>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Coquilles Saint-Jacques</h2>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Coquilles Saint-Jacques</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Accompagnées d'une purée de panais</p>
+                    <p class="menu-card__price">40€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">
-                    Accompagnées d'une purée de panais
-                  </p>
-                  <p class="sous-menu__prix">40€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Magret de canard</h2>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Magret de canard</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Et parmentier de pommes de terre</p>
+                    <p class="menu-card__price">35€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">
-                    Et parmentier de pommes de terre
-                  </p>
-                  <p class="sous-menu__prix">35€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Pigeonneau d’Ille-et-Vilaine</h2>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Pigeonneau d’Ille-et-Vilaine</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Sur son lit de gnocchis aux légumes</p>
+                    <p class="menu-card__price">44€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">
-                    Sur son lit de gnocchis aux légumes
-                  </p>
-                  <p class="sous-menu__prix">44€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
+              </a>
+              
             </section>
+
             <!-- Desserts -->
-            <section class="sous-menu">
-              <p class="sous-menu__label">
-                <span class="underline">Dess</span>erts
+
+            <section class="section-menu">
+              <p class="section-menu__label">
+                <span class="section-menu__label--underline">Dess</span>erts
               </p>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Pétales de violettes glacés</h2>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Pétales de violettes glacés</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Et purée de noisettes</p>
+                    <p class="menu-card__price">18€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Et purée de noisettes</p>
-                  <p class="sous-menu__prix">18€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Fondant au chocolat</h2>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Fondant au chocolat</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Revisité</p>
+                    <p class="menu-card__price">22€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Revisité</p>
-                  <p class="sous-menu__prix">22€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Millefeuille croustillant</h2>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Millefeuille croustillant</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Myrtilles et pâte d’amande</p>
+                    <p class="menu-card__price">23€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Myrtilles et pâte d’amande</p>
-                  <p class="sous-menu__prix">23€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
+              </a>
+              
             </section>
+
             <a href="#" class="menu-button button">Commander</a>
           </div>
         </div>

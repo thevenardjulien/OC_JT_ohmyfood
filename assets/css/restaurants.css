@@ -162,6 +162,10 @@ li {
     transform: rotate(1turn);
   }
 }
+.main-container {
+  background-color: #ffffff;
+}
+
 .header-container {
   display: flex;
   flex-direction: row;
@@ -209,7 +213,6 @@ li {
   gap: 40px;
   margin: 0;
   padding: 0;
-  background-color: #f6f6f6;
 }
 
 .section-menu {
@@ -242,6 +245,7 @@ li {
   box-sizing: border-box;
   overflow: hidden;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
   border-radius: 15px;
 }
 .menu-card:hover .menu-card__validation {

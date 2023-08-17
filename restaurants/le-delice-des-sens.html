@@ -21,7 +21,7 @@
       <header>
         <div class="header-container">
           <a href="../index.html">
-            <i class="header-container__icon fa-solid fa-arrow-left"></i>
+            <!-- <i class="header-container__icon fa-solid fa-arrow-left"></i> -->
           </a>
           <a href="../index.html"
             ><p class="header-container__title">ohmyfood</p></a
@@ -35,119 +35,181 @@
           <img
             class="banner__img"
             src="../assets/img/le_delice_des_sens.jpg"
-            alt="Image La palette du goût"
+            alt="Image Le délice des sens"
           />
         </div>
         <div class="menu">
           <div class="menu__header">
             <h1 class="menu__title">Le délice des sens</h1>
-            <i class="menu__icon heart fa-regular fa-heart"></i>
-            <i class="menu__icon heart fa-solid fa-heart"></i>
+            <div class="heart-container">
+              <i class="menu__icon heart fa-regular fa-heart"></i>
+              <i class="menu__icon heart fa-solid fa-heart"></i>
+            </div>
           </div>
-          <div class="container-sous-menu">
+
+          <div class="container-sections-menu">
             <!-- Entrees -->
-            <section class="sous-menu">
-              <p class="sous-menu__label">
-                <span class="underline">Entr</span>ées
+
+            <section class="section-menu">
+              <p class="section-menu__label">
+                <span class="section-menu__label--underline">Entr</span>ées
               </p>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Tartare de thon</h2>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Tartare de thon</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Assaisonné au yuzu</p>
+                    <p class="menu-card__price">25€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Assaisonné au yuzu</p>
-                  <p class="sous-menu__prix">25€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">
-                    Bouchée de homard croustillant
-                  </h2>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Bouchée de homard croustillant </h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Et sa farandole de petits légumes</p>
+                    <p class="menu-card__price">35€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">
-                    Et sa farandole de petits légumes
-                  </p>
-                  <p class="sous-menu__prix">35€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">
-                    Poulet rôti aux herbes de Provence
-                  </h2>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Poulet rôti aux herbes de Provence</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Et sa crème de truffe</p>
+                    <p class="menu-card__price">40€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Et sa crème de truffe</p>
-                  <p class="sous-menu__prix">40€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
+              </a>
+              
             </section>
+
             <!-- Plats -->
-            <section class="sous-menu">
-              <p class="sous-menu__label">
-                <span class="underline">Plat</span>s
+
+            <section class="section-menu">
+              <p class="section-menu__label">
+                <span class="section-menu__label--underline">Plat</span>s
               </p>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">
-                    Poulet rôti aux herbes de Provence
-                  </h2>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Poulet rôti aux herbes de Provence</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Et sa crème de truffe</p>
+                    <p class="menu-card__price">40€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Et sa crème de truffe</p>
-                  <p class="sous-menu__prix">40€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Langouste rôtie</h2>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Langouste rôtie</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Et ses légumes de saison</p>
+                    <p class="menu-card__price">35€</p>
+                  </div>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Et ses légumes de saison</p>
-                  <p class="sous-menu__prix">35€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div><h2 class="sous-menu__title">Côte de bœuf Angus</h2></div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Et sa purée de panais</p>
-                  <p class="sous-menu__prix">44€</p>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Côte de bœuf Angus</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Et sa purée de panais</p>
+                    <p class="menu-card__price">44€</p>
+                  </div>
                 </div>
-              </div>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
+                </div>
+              </a>
+              
             </section>
+
             <!-- Desserts -->
-            <section class="sous-menu">
-              <p class="sous-menu__label">
-                <span class="underline">Dess</span>erts
+
+            <section class="section-menu">
+              <p class="section-menu__label">
+                <span class="section-menu__label--underline">Dess</span>erts
               </p>
-              <div class="sous-menu__bloc">
-                <div><h2 class="sous-menu__title">Œuf au plat</h2></div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">
-                    Assaisonné à la truffe sur lit de caviar
-                  </p>
-                  <p class="sous-menu__prix">76€</p>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Œuf au plat</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Assaisonné à la truffe sur lit de caviar</p>
+                    <p class="menu-card__price">76€</p>
+                  </div>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div>
-                  <h2 class="sous-menu__title">Crème brulée</h2>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">Revisitée</p>
-                  <p class="sous-menu__prix">22€</p>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Crème brulée</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">Revisitée</p>
+                    <p class="menu-card__price">22€</p>
+                  </div>
                 </div>
-              </div>
-              <div class="sous-menu__bloc">
-                <div><h2 class="sous-menu__title">Tiramisu</h2></div>
-                <div class="sous-menu__content">
-                  <p class="sous-menu__text">À la noisette</p>
-                  <p class="sous-menu__prix">23€</p>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
                 </div>
-              </div>
+              </a>
+
+              <a href="#" class="menu-card">
+                <div class="menu-card__content">
+                  <h2 class="menu-card__title">Tiramisu</h2>
+
+                  <div class="menu-card__infos">
+                    <p class="menu-card__text">À la noisette</p>
+                    <p class="menu-card__price">23€</p>
+                  </div>
+                </div>
+
+                <div class="menu-card__validation">
+                  <i class="menu-card__icon fa-solid fa-check"></i>
+                </div>
+              </a>
+              
             </section>
+
             <a href="#" class="menu-button button">Commander</a>
           </div>
         </div>
@@ -158,6 +220,7 @@
           <a href="../index.html"
             ><p class="footer-container__title">ohmyfood</p></a
           >
+          
           <ul class="footer-container__list">
             <li>
               <a class="footer-container__link" href="#"
