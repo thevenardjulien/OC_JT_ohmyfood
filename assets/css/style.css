@@ -116,7 +116,7 @@ li {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

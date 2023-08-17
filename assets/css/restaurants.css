@@ -115,7 +115,7 @@ li {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -201,7 +201,7 @@ li {
   font-size: 1.75rem;
 }
 
-.container-sous-menu {
+.container-sections-menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -209,9 +209,10 @@ li {
   gap: 40px;
   margin: 0;
   padding: 0;
+  background-color: #f6f6f6;
 }
 
-.sous-menu {
+.section-menu {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -219,42 +220,78 @@ li {
   align-items: flex-start;
   gap: 15px;
 }
-.sous-menu__label {
+.section-menu__label {
   text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 8px;
 }
-.sous-menu__bloc {
+.section-menu__label--underline {
+  text-decoration: underline 3px #99e2d0;
+  text-underline-offset: 8px;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70px;
   width: 100%;
-  box-sizing: border-box;
-  background-color: white;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 15px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
 }
-.sous-menu__title {
+.menu-card:hover .menu-card__validation {
+  transform: translateX(0);
+}
+.menu-card:hover .menu-card__price {
+  transform: translateX(-60px);
+}
+.menu-card__content {
+  width: 100%;
+}
+.menu-card__title {
   font-size: 1.125rem;
   font-weight: 500;
 }
-.sous-menu__content {
+.menu-card__infos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
-.sous-menu__text {
+.menu-card__text {
   font-weight: 300;
   font-size: 0.9rem;
   margin-right: 5px;
 }
-.sous-menu__prix {
+.menu-card__price {
   font-weight: 500;
+  transition: transform 300ms;
 }
-
-.underline {
-  text-decoration: underline 3px #99e2d0;
-  text-underline-offset: 8px;
+.menu-card__validation {
+  width: 60px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  background-color: #99e2d0;
+  border-radius: 0 15px 15px 0;
+  transform: translateX(60px);
+  transition: transform 300ms;
+}
+.menu-card__icon {
+  color: #99e2d0;
+  background-color: #ffffff;
+  padding: 3px;
+  border-radius: 50%;
 }
 
 .menu-button {
@@ -278,7 +315,7 @@ li {
   .menu__title {
     padding-right: 15px;
   }
-  .container-sous-menu {
+  .container-sections-menu {
     width: 60%;
   }
 }
