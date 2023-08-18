@@ -318,6 +318,33 @@ footer {
   text-underline-offset: 8px;
 }
 
+.section-menu:nth-child(1) {
+  opacity: 0;
+  animation: section-menu-appearence 1s forwards;
+  animation-delay: 500ms;
+}
+
+.section-menu:nth-child(2) {
+  opacity: 0;
+  animation: section-menu-appearence 1s forwards;
+  animation-delay: 1000ms;
+}
+
+.section-menu:nth-child(3) {
+  opacity: 0;
+  animation: section-menu-appearence 1s forwards;
+  animation-delay: 1500ms;
+}
+
+@keyframes section-menu-appearence {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .menu-card {
   display: flex;
   flex-direction: row;
