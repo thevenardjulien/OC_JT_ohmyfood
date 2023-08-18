@@ -1,32 +1,4 @@
-@use "globals/index" as *;
-@use "components/index" as *;
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: $secondary-font;
-  background-color: $light-gray;
-}
-
-.main-container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.header-container {
-  @include flex;
-  background-color: $white;
-  &__title {
-    margin: 15px 0px 5px 0px;
-    @include ohmyfood-font(1.875rem);
-  }
-}
+@use "../abstracts/index" as *;
 
 .location {
   @include flex;
@@ -114,40 +86,20 @@ body {
   }
 }
 
-footer {
-  background-color: $dark-gray;
-}
-
-.footer-container {
-  padding: 25px;
-  &__title {
-    @include ohmyfood-font(1.125rem);
-    margin-bottom: 20px;
-    color: $white;
-  }
-  &__list {
-    @include flex(column, $align-items: flex-start);
-    gap: 8px;
-  }
-  &__link {
-    color: $white;
-  }
-  &__icon {
-    margin-right: 10px;
-  }
-}
-
 /* Medias */
 
 @media (min-width: 768px) {
+  .location {
+    box-shadow: none;
+  }
+  .explore__title {
+    font-size: 2rem;
+  }
   .functioning {
     padding: 25px 80px;
     &__block {
       padding-right: 10px;
     }
-  }
-  .explore__title {
-    font-size: 2rem;
   }
   .functioning__container {
     @include flex($justify-content: flex-start);
@@ -161,25 +113,6 @@ footer {
     row-gap: 50px;
     column-gap: 100px;
   }
-  .footer-container {
-    padding: 55px 50px 30px 0px;
-    @include flex(
-      $flex-direction: row-reverse,
-      $justify-content: flex-start,
-      $align-items: center
-    );
-    gap: 20px;
-    &__title {
-      margin: 0;
-    }
-    &__spacing {
-      padding-right: 25px;
-    }
-  }
-
-  .footer-container__list {
-    flex-direction: row;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -191,13 +124,5 @@ footer {
   }
   .restaurant {
     padding: 30px 180px;
-  }
-  .footer-container {
-    gap: 100px;
-  }
-  .footer-container {
-    &__spacing {
-      padding-right: 50px;
-    }
   }
 }

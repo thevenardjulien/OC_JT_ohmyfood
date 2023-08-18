@@ -1,20 +1,5 @@
-@use "globals/index" as *;
-@use "components/index" as *;
-
-.main-container {
-  background-color:$white;
-}
-
-.header-container {
-  @include flex($justify-content: space-between);
-  &__iconbox {
-    position:absolute;
-  }
-  &__icon {
-    padding-top: 10px;
-    margin-left:15px;
-  }
-}
+@use "../abstracts/index" as *;
+@use "../components/index" as *;
 
 .banner {
   &__img {

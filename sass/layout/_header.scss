@@ -1,0 +1,31 @@
+@use "../abstracts/index" as *;
+
+.header-container {
+  @include flex;
+  background-color: $white;
+  &__title {
+    margin: 15px 0px 10px 0px;
+    @include ohmyfood-font(1.875rem);
+  }
+  // Icon for restaurants page
+  &__icon {
+    position: absolute;
+    left: 15px;
+    top: 25px;
+  }
+}
+
+
+@media (min-width:768px) {
+  .header-container {
+    &__title {
+      margin: 20px 0px 20px 0px;
+    }
+    // Icon for restaurants page
+    &__icon {
+      position: absolute;
+      left: 25px;
+      top: 35px;
+    }
+  }
+}

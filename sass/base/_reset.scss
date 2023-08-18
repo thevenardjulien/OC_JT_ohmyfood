@@ -1,4 +1,13 @@
-@use "variables" as *;
+@use '../abstracts/index' as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: $light-gray;
+}
 
 h1,
 h2,
