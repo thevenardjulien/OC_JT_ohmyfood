@@ -61,11 +61,24 @@
   @include box-shadow;
   background-color: $white;
   border-radius: 15px;
+
   &:hover .menu-card__validation {
     transform: translateX(0);
   }
+  &:hover .menu-card__title {
+    width:80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   &:hover .menu-card__price {
     transform: translateX(-60px);
+  }
+  &:hover .menu-card__text {
+    width:65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__content {
@@ -120,7 +133,7 @@
 @media (min-width: 768px) {
   .header-container {
     &__icon {
-      margin-left:25px;
+      margin-left: 25px;
     }
   }
   .banner {
@@ -136,6 +149,11 @@
     }
     &__title {
       padding-right: 15px;
+    }
+  }
+  .menu-card {
+    &:hover .menu-card__text{
+      width:100%;
     }
   }
   .container-sections-menu {

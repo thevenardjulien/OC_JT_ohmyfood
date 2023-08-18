@@ -336,8 +336,20 @@ footer {
 .menu-card:hover .menu-card__validation {
   transform: translateX(0);
 }
+.menu-card:hover .menu-card__title {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .menu-card:hover .menu-card__price {
   transform: translateX(-60px);
+}
+.menu-card:hover .menu-card__text {
+  width: 65%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-card__content {
   width: 100%;
@@ -406,6 +418,9 @@ footer {
   }
   .menu__title {
     padding-right: 15px;
+  }
+  .menu-card:hover .menu-card__text {
+    width: 100%;
   }
   .container-sections-menu {
     width: 60%;
